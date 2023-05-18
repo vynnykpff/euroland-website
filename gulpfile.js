@@ -28,8 +28,8 @@ const server = () => {
 
 // Watcher
 const watcher = () => {
-	// watch(path.html.watch, pug).on('all', bs.reload);
 	// watch(path.css.watch, css).on('all', bs.reload);
+	watch(path.html.watch, html).on('all', bs.reload);
 	watch(path.scss.watch, scss).on('all', bs.reload);
 	watch(path.js.watch, js).on('all', bs.reload);
 	watch(path.img.watch, img).on('all', bs.reload);

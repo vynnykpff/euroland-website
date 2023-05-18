@@ -2,11 +2,13 @@
 	"name": "gulp-starter",
 	"version": "1.0.0",
 	"main": "index.js",
+	"homepage": "https://vynnykpff.github.io/euroland-website",
 	"type": "module",
 	"license": "MIT",
 	"scripts": {
 		"dev": "gulp",
-		"build": "gulp --production"
+		"build": "gulp --production",
+		"deploy": "gh-pages -d public"
 	},
 	"browserslist": [
 		"last 3 versions"
@@ -24,6 +26,7 @@
 		"@babel/preset-env": "^7.21.5",
 		"browser-sync": "^2.29.3",
 		"del": "6.1.1",
+		"gh-pages": "^5.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-babel": "^8.0.0",

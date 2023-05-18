@@ -1,5 +1,6 @@
 # Logs
 node_modules
+public
 
 # Editor directories and files
 .vscode/*
@@ -10,3 +11,4 @@ node_modules
 data
 pug
 task/pug.js
+help.txt
