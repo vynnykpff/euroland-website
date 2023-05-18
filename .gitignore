@@ -1,0 +1,12 @@
+# Logs
+node_modules
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Unused folders
+data
+pug
+task/pug.js
