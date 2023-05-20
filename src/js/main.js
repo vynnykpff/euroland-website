@@ -3,12 +3,6 @@ document.querySelector('.burger').addEventListener('click', function () {
 	document.querySelector('.nav__list').classList.toggle('open');
 });
 
-const aboutTitle = document.querySelector('.about__title');
-const aboutText = document.querySelector('.about__text');
-
-aboutText.addEventListener('mouseover', e => {
-	console.log('test');
-
-	aboutTitle.style
-
-});
+// Footer update year
+let span = document.querySelector('.rights > span');
+span.innerHTML = new Date().getFullYear();

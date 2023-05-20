@@ -1,0 +1,38 @@
+$base-font-size: 16px;
+// @mixin ph {
+// 	@media (max-width: 700px) {
+// 		@content;
+// 	}
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: $base-font-size;
+  font-family: "Poppins", sans-serif;
+  // @include ph {
+  // 	color: #fff;
+  // 	background-color: red;
+  // }
+}
+
+.education-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// @import "./block/*.scss";
+@import "./block/reset.scss";
+@import "./block/header-simple.scss";
+@import "./block/footer.scss";
+@import "./block/burger.scss";
+@import "./block/education-main.scss";
+@import "./block/nav.scss";

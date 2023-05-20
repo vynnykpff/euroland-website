@@ -1,0 +1,114 @@
+.education-main {
+  flex: 1 1 auto;
+
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  .education {
+    text-align: center;
+    margin: 40px auto;
+
+    &__title {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    &__block {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 22px;
+      border-radius: 30px;
+      color: #fff;
+      padding: 0px 30px;
+      background-color: #6685f1;
+      height: 250px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      border: 2px solid #ff584e;
+      text-align: center;
+    }
+
+    &__image {
+      width: 150px;
+      position: absolute;
+      right: -60px;
+      top: -60px;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &__point {
+      width: 120px;
+      position: absolute;
+      left: 10px;
+      top: -95px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+}
+
+.about__card {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &--text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.about__divider {
+  font-weight: 700;
+  font-size: 22px;
+  background-color: #6685f1;
+  color: #fff;
+  padding: 20px;
+  letter-spacing: 1.2px;
+  border-radius: 20px;
+  width: 600px;
+  text-align: center;
+  margin: 20px 0;
+}

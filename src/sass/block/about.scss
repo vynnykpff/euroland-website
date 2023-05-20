@@ -4,12 +4,24 @@
   .container {
     max-width: 1260px;
     margin: 10px auto;
-    padding: 40px 0;
+    padding: 20px 0;
     position: relative;
 
     &__inside {
       max-width: 1100px;
       margin: 0 auto;
+    }
+
+    .banner-training {
+      width: 800px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      border-radius: 30px;
+      border: 2px solid #6685f1;
+
+      &__image {
+        border-radius: 30px;
+      }
     }
 
     .appeal {
@@ -28,7 +40,6 @@
       margin-bottom: 30px;
 
       &__title {
-        display: inline-block;
         width: 80%;
         margin-left: 40px;
       }
@@ -108,6 +119,7 @@
         justify-content: center;
         width: 1000px;
         margin: 0 auto;
+        margin-bottom: 50px;
       }
 
       &__card {
@@ -115,6 +127,10 @@
         align-items: center;
         column-gap: 30px;
         margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         &--number {
           display: flex;
@@ -161,16 +177,137 @@
         transition: 0.2s ease;
       }
     }
+
+    .location {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 25px;
+      border-radius: 30px;
+      color: #fff;
+      padding: 0px 30px;
+      background-color: #6685f1;
+      height: 120px;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      border: 2px solid #ff584e;
+      text-align: center;
+
+      &__image {
+        width: 150px;
+        position: absolute;
+        right: -40px;
+        top: -30px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.03);
+          transition: all 0.3s ease;
+        }
+      }
+
+      &__point {
+        width: 80px;
+        position: absolute;
+        z-index: -1;
+        left: -20px;
+        top: -55px;
+        transform: rotate(-22deg);
+      }
+
+      &__link {
+        transition: all 0.3s ease;
+        &:hover {
+          color: #ff7b4e;
+        }
+      }
+    }
   }
 
   .about-line {
     position: absolute;
     z-index: 3;
     left: 0;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
     height: 30px;
     background-color: #b2c2f9;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
+
+  .invocation {
+    &__text {
+      margin-top: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+.rectangle {
+  counter-reset: li;
+  list-style: none;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  width: 800px;
+  margin: 30px auto;
+}
+
+.rectangle li {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 0.8em;
+  margin: 0.5em 0 0.5em 2.5em;
+  background: #6283f5;
+  color: #0f1f1c;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.rectangle li:hover {
+  background: #ff7b4e;
+}
+
+.rectangle li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #6283f5;
+  color: #fff;
+}
+
+.rectangle li:after {
+  position: absolute;
+  content: "";
+  border: 0.5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -0.5em;
+  transition: all 0.3s ease-out;
+}
+
+.rectangle li:hover:after {
+  left: -0.5em;
+  border-left-color: #9097a2;
+}
+
+.rectangle li:hover:before {
+  background: #6283f5;
+  color: #fff;
+  transition: 0.3s all linear;
 }

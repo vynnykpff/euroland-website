@@ -1,0 +1,104 @@
+.footer {
+  padding: 25px 0;
+  background: #595959;
+
+  &__logo {
+    background: #9db1f6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 30px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__logo--image {
+    width: 180px;
+  }
+
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+    .nav-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 80px;
+    }
+  }
+
+  &__contact--link {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    letter-spacing: 1.2px;
+
+    span {
+      color: #f97b51;
+      transition: all 0.3s ease;
+    }
+
+    &:hover .phone-icon {
+      color: #9db1f6;
+      transition: all 0.3s ease;
+    }
+
+    &:hover .mail-icon {
+      color: #9db1f6;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__documents--item {
+    margin-bottom: 10px;
+    text-align: center;
+
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      transform: scaleX(0);
+      height: 3px;
+      bottom: -5px;
+      left: 25%;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+      margin: 0 auto;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+      transform-origin: bottom left;
+    }
+
+    &__documents--link {
+      letter-spacing: 1.2px;
+      transition: all 1.3s ease;
+    }
+
+    .footer__documents--link {
+      transition: all 0.3s ease;
+    }
+
+    .footer__documents--link:hover {
+      transition: all 0.3s ease;
+      color: #f97b51;
+    }
+  }
+}
+
+.rights {
+  text-align: center;
+  background: #303030;
+  color: #ffffffbd;
+  padding: 10px 0;
+  font-size: 14px;
+}

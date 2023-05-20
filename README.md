@@ -1,6 +1,6 @@
 # **Euroland International School**
 
-## [**<u>Link to website</u>**](https://www.youtube.com/watch?v=tCn5hzxJi2o&ab_channel=Axilz)
+## [**<u>Link to website</u>**](https://vynnykpff.github.io/euroland-website/)
 
 ---
 
