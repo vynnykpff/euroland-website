@@ -215,6 +215,11 @@ legend {
   -webkit-column-gap: 80px;
   -moz-column-gap: 80px;
   column-gap: 80px;
+  margin: 0 30px;
+}
+
+.footer__contact--item {
+  margin-bottom: 10px;
 }
 
 .footer__contact--link {
@@ -228,6 +233,7 @@ legend {
   -moz-column-gap: 20px;
   column-gap: 20px;
   letter-spacing: 1.2px;
+  margin-bottom: 10px;
 }
 
 .footer__contact--link span {
@@ -311,6 +317,42 @@ legend {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f97b51;
+}
+
+.footer__messagers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__messagers--item {
+  margin-right: 15px;
+}
+
+.footer__messagers--item:last-child {
+  margin-right: 0;
+}
+
+.footer__messagers--link img {
+  width: 35px;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.footer__messagers--link img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .rights {
@@ -445,6 +487,10 @@ legend {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
+.nav__logo--image {
+  width: 200px;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,7 +554,7 @@ legend {
   font-weight: 600;
 }
 
-.nav__item-btn {
+.nav__item--btn {
   background: -o-linear-gradient(320.46deg, #ff7b4e 15.57%, #ff584e 95.03%);
   background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
   -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
@@ -517,7 +563,7 @@ legend {
   border-radius: 40px;
 }
 
-.nav__item-btn:hover {
+.nav__item--btn:hover {
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
   transform: scale(2);
@@ -665,6 +711,69 @@ legend {
 
 }
 
+@media (max-width: 1340px) {
+  .nav__logo {
+    width: 200px;
+  }
+
+  .nav__logo img {
+    width: 160px;
+  }
+
+  .nav .rocket-image {
+    width: 40px;
+    left: -18px;
+    top: 25px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 1140px) {
+  .footer__logo--image {
+    width: 150px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 1050px) {
+  .nav__list {
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+
+  .nav__item {
+    font-size: 20px;
+  }
+
+  .nav__item--btn {
+    font-size: 20px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 915px) {
+  .footer .container .nav-footer {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    font-size: 14px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
 @media (max-width: 900px) {
   .burger {
     display: -webkit-box;
@@ -688,7 +797,7 @@ legend {
     z-index: 50;
     overflow-y: auto;
     padding: 50px 40px;
-    background-color: black;
+    background-color: #6484f3;
     -webkit-animation: burgerAnimation 0.4s;
     animation: burgerAnimation 0.4s;
   }
@@ -698,7 +807,66 @@ legend {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 40px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 850px) {
+  .footer .container .nav-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+  }
+
+  .footer .container .nav-footer .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer .container .nav-footer .footer__contact {
+    margin-top: 20px;
+  }
+
+  .footer .container .nav-footer .footer__documents {
+    font-weight: 600;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 490px) {
+  .nav__logo {
+    width: 150px;
+    height: 55px;
+  }
+
+  .nav__logo img {
+    width: 120px;
+  }
+
+  .nav .rocket-image {
+    left: -12px;
+    top: 28px;
+    width: 35px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 420px) {
+  .rights {
+    padding: 10px 20px;
   }
 
 @supports (-webkit-appearance:none) {
