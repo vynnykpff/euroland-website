@@ -16,10 +16,6 @@ html {
 body {
 	font-size: $base-font-size;
 	font-family: "Poppins", sans-serif;
-	// @include ph {
-	// 	color: #fff;
-	// 	background-color: red;
-	// }
 }
 
 @import "./block/*.scss";

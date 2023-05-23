@@ -14,6 +14,10 @@
     background-color: #ffffff5b;
     border-radius: 40px;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    &--image {
+      width: 200px;
+    }
   }
 
   &__list {
@@ -58,7 +62,7 @@
     font-weight: 600;
   }
 
-  &__item-btn {
+  &__item--btn {
     background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     padding: 10px 20px;
@@ -79,6 +83,58 @@
     &:hover {
       transform: rotate(370deg);
       transition: transform 0.5s ease;
+    }
+  }
+}
+
+@media (max-width: 1340px) {
+  .nav {
+    &__logo {
+      width: 200px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    .rocket-image {
+      width: 40px;
+      left: -18px;
+      top: 25px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav {
+    &__list {
+      column-gap: 40px;
+    }
+
+    &__item {
+      font-size: 20px;
+
+      &--btn {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .nav {
+    &__logo {
+      width: 150px;
+      height: 55px;
+
+      img {
+        width: 120px;
+      }
+    }
+    .rocket-image {
+      left: -12px;
+      top: 28px;
+      width: 35px;
     }
   }
 }
