@@ -1,8 +1,10 @@
+@import "./variables.scss";
+
 .education-main {
   flex: 1 1 auto;
 
   .container {
-    max-width: 1260px;
+    max-width: $base-container;
     margin: 0 auto;
     padding: 0 30px;
 
@@ -27,14 +29,14 @@
         justify-content: center;
         align-items: center;
         font-weight: 600;
-        font-size: 22px;
+        font-size: $base-fontSize--middle;
         border-radius: 30px;
         color: #fff;
         padding: 0px 30px;
-        background-color: #6685f1;
+        background-color: $base-color;
         height: 250px;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        border: 2px solid #ff584e;
+        box-shadow: $base-boxshadow;
+        border: $base-border--orange;
         text-align: center;
       }
 
@@ -43,10 +45,10 @@
         position: absolute;
         right: -60px;
         top: -60px;
-        transition: all 0.3s ease;
+        transition: $base-transition;
         &:hover {
-          transform: scale(1.03);
-          transition: all 0.3s ease;
+          transform: $base-transform-scale;
+          transition: $base-transition;
         }
       }
 
@@ -55,11 +57,11 @@
         position: absolute;
         left: 10px;
         top: -95px;
-        transition: all 0.3s ease;
+        transition: $base-transition;
 
         &:hover {
-          transform: scale(1.03);
-          transition: all 0.3s ease;
+          transform: $base-transform-scale;
+          transition: $base-transition;
         }
       }
     }
@@ -93,8 +95,8 @@
 
       &__divider {
         font-weight: 700;
-        font-size: 22px;
-        background-color: #6685f1;
+        font-size: $base-fontSize--middle;
+        background-color: $base-color;
         color: #fff;
         padding: 20px;
         letter-spacing: 1.2px;
@@ -137,7 +139,7 @@
     .container {
       .education {
         &__title {
-          font-size: 25px;
+          font-size: $base-fontSize--overMiddle;
         }
 
         &__subtitle {
@@ -170,7 +172,7 @@
     .container {
       .education {
         &__title {
-          font-size: 22px;
+          font-size: $base-fontSize--middle;
         }
         &__subtitle {
           margin-top: 10px;
@@ -178,7 +180,7 @@
         }
 
         &__block {
-          font-size: 18px;
+          font-size: $base-fontSize--small;
         }
 
         &__image {
@@ -218,7 +220,7 @@
         &__card {
           margin-bottom: 20px;
           &--text {
-            font-size: 18px;
+            font-size: $base-fontSize--small;
           }
         }
 

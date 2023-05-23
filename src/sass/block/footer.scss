@@ -1,17 +1,19 @@
+@import "./variables.scss";
+
 .footer {
   padding: 25px 0;
   background: #595959;
 
   &__logo {
     background: #9db1f6;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: $base-boxshadow;
     border-radius: 30px;
     padding: 15px 20px;
-    transition: all 0.3s ease;
+    transition: $base-transition;
 
     &:hover {
-      transform: scale(1.03);
-      transition: all 0.3s ease;
+      transform: $base-transform-scale;
+      transition: $base-transition;
     }
   }
 
@@ -20,7 +22,7 @@
   }
 
   .container {
-    max-width: 1260px;
+    max-width: $base-container;
     margin: 0 auto;
     .nav-footer {
       display: flex;
@@ -45,18 +47,18 @@
     margin-bottom: 10px;
 
     span {
-      color: #f97b51;
-      transition: all 0.3s ease;
+      color: $primary-color;
+      transition: $base-transition;
     }
 
     &:hover .phone-icon {
       color: #9db1f6;
-      transition: all 0.3s ease;
+      transition: $base-transition;
     }
 
     &:hover .mail-icon {
       color: #9db1f6;
-      transition: all 0.3s ease;
+      transition: $base-transition;
     }
   }
 
@@ -93,12 +95,12 @@
     }
 
     .footer__documents--link {
-      transition: all 0.3s ease;
+      transition: $base-transition;
     }
 
     .footer__documents--link:hover {
-      transition: all 0.3s ease;
-      color: #f97b51;
+      transition: $base-transition;
+      color: $primary-color;
     }
   }
 
@@ -117,12 +119,12 @@
 
     &--link img {
       width: 35px;
-      transition: all ease 0.2s;
+      transition: $base-transition;
     }
 
     &--link img:hover {
       transform: scale(1.1);
-      transition: all ease 0.3s;
+      transition: $base-transition;
     }
   }
 }

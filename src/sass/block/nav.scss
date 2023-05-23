@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,7 @@
     height: 70px;
     background-color: #ffffff5b;
     border-radius: 40px;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: $base-boxshadow;
 
     &--image {
       width: 200px;
@@ -27,10 +29,10 @@
   }
 
   &__item {
-    font-size: 22px;
+    font-size: $base-fontSize--middle;
     font-weight: 600;
     letter-spacing: 1.2px;
-    transition: all 0.3s ease;
+    transition: $base-transition;
     position: relative;
     cursor: pointer;
     &::after {
@@ -63,8 +65,8 @@
   }
 
   &__item--btn {
-    background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background: linear-gradient(129.54deg, $primary-color 15.57%, $additional-color 95.03%);
+    box-shadow: $base-boxshadow;
     padding: 10px 20px;
     border-radius: 40px;
 

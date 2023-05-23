@@ -1,16 +1,18 @@
+@import "./variables.scss";
+
 .header {
-  background-color: #6484f3;
+  background-color: $base-color;
   position: relative;
   padding: 0px 20px;
   overflow: hidden;
   .container {
-    max-width: 1260px;
+    max-width: $base-container;
     height: 150px;
     margin: 0px auto;
     padding: 40px 0;
     position: relative;
   }
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: $base-boxshadow;
 }
 
 @media (max-width: 490px) {
