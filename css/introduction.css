@@ -596,12 +596,12 @@ legend {
   flex: 1 1 auto;
 }
 
-.container {
+.main .container {
   max-width: 1260px;
   margin: 0 auto;
 }
 
-.about {
+.main .container .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,9 +618,12 @@ legend {
   width: 1050px;
   margin: 0 auto;
   margin-bottom: 50px;
+  max-width: 100%;
+  padding: 0 20px;
+  text-align: center;
 }
 
-.about__card {
+.main .container .about__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,36 +639,21 @@ legend {
   margin-bottom: 30px;
 }
 
-.about__card:last-child {
+.main .container .about__card:last-child {
   margin-bottom: 0;
 }
 
-.about__card--number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #000;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.about__card--text {
+.main .container .about__card--text {
   font-size: 22px;
   font-weight: 600;
 }
 
-.about__card--text a {
+.main .container .about__card--text a {
   color: #000;
   text-align: center;
 }
 
-.about__header {
+.main .container .about__header {
   text-align: center;
   margin: 30px 0;
   font-weight: 700;
@@ -676,14 +664,14 @@ legend {
   transition: 0.2s ease;
 }
 
-.about__header:hover {
+.main .container .about__header:hover {
   color: #6283f5;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
-.about__image {
+.main .container .about__image {
   width: 230px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease;
@@ -691,7 +679,7 @@ legend {
   transition: all 0.3s ease;
 }
 
-.about__image:hover {
+.main .container .about__image:hover {
   -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
   transform: scale(1.03);
@@ -700,7 +688,7 @@ legend {
   transition: all 0.3s ease;
 }
 
-.about__card:hover .about__card--text a {
+.main .container .about__card:hover .about__card--text a {
   color: #ff7b4e;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
@@ -844,6 +832,10 @@ legend {
 }
 
 @media (max-width: 490px) {
+  .header .container {
+    height: 120px;
+  }
+
   .nav__logo {
     width: 150px;
     height: 55px;
@@ -857,6 +849,24 @@ legend {
     left: -12px;
     top: 28px;
     width: 35px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 450px) {
+  .main .container .about__image {
+    width: 180px;
+  }
+
+  .main .container .about__header--text {
+    font-size: 25px;
+  }
+
+  .main .container .about__card {
+    margin-bottom: 20px;
   }
 
 @supports (-webkit-appearance:none) {
