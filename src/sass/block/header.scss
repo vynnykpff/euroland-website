@@ -244,7 +244,13 @@
 @media (max-width: 630px) {
   .header {
     .container {
+      .tizer--mobile {
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+      }
       .tizer {
+        display: none;
         &__image {
           display: none;
         }
@@ -270,7 +276,7 @@
         }
 
         &__title--mobile {
-          font-size: 25px;
+          font-size: 30px;
           font-weight: 700;
           letter-spacing: 2px;
           text-transform: uppercase;
@@ -304,6 +310,11 @@
       .tizer {
         &--mobile {
           margin-top: 30px;
+        }
+
+        &__text--mobile {
+          font-size: 20px;
+          color: #fff;
         }
       }
     }
