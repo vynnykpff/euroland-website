@@ -107,10 +107,18 @@
   }
 }
 
+@media (max-width: 1250px) {
+  .nav {
+    &__list {
+      column-gap: 20px;
+    }
+  }
+}
+
 @media (max-width: 1050px) {
   .nav {
     &__list {
-      column-gap: 40px;
+      column-gap: 15px;
     }
 
     &__item {
